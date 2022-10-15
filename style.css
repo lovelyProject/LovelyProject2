@@ -18,9 +18,20 @@ font-weight: normal;
     font-style: normal;
     font-weight: normal;
 }
+@keyframes start{
+    0%{
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 0.5;
+    }
+}
 .greetings{
     background: linear-gradient(360deg, #141C24 0%, rgba(20, 28, 36, 0) 95.65%), #527E8B;
-    overflow-y: hidden;
+    
     
 }
 .main-wrapper{
@@ -34,7 +45,6 @@ font-weight: normal;
     width: 1331px;
     height: 791px;
     margin: 26px auto 0;
-/*    background:  url(main-bg-img/stalker.png) -60px 0 no-repeat;*/
     border-radius: 20px;
     
 }
@@ -52,10 +62,11 @@ font-weight: normal;
 }
 .main-nav{
     display: flex;
+    padding: 44px 45px 0 75px;
+    align-items: center;
     justify-content: space-between;
 }
 .logo{
-    margin: 80px 45px 0 45px;
     display: flex;
     align-items: center;
 }
@@ -64,14 +75,33 @@ font-weight: normal;
     font-size: 24px;
     color: #fff;
     margin-left: 25px;
+    cursor: default;
 }
-
+.nav-menu{
+      
+    display: none;
+    position: relative; 
+}
+.nav-menu_active{ 
+    display: flex;
+}
+.nav-menu-item{
+    font-size: 18px;
+    color: #fff;
+    font-family: 'Roboto';
+    margin-right: 15px;
+    text-decoration: none;
+}
+.nav-menu-item:hover{
+    opacity: 0.6;
+}
 .burger-menu{
-    margin: 80px 45px 0 45px;
     width: 80px;
     height: 80px;
     border-radius: 50%;
-    
+}
+.burger-menu:hover{
+    opacity: 0.6;
 }
 .burger-menu__lines,
 .burger-menu__lines::before,
@@ -95,6 +125,7 @@ font-weight: normal;
     content: '';
     margin-top: -10px;
 }
+
 .greet-text{
     display: block;
     margin-top: 264px;
@@ -104,6 +135,7 @@ font-weight: normal;
     color: white;
     font-size: 16px;
     font-weight: 500;
+    cursor: default;
 }
 .greet-title{
     margin: 4px 0 0 0 ;
@@ -113,6 +145,7 @@ font-weight: normal;
     font-size: 48px;
     font-family: 'Aire Exterior',sans-serif;
     font-weight: 400;
+    cursor: default;
 }
 .btn-upgrade{
     width: 251px;

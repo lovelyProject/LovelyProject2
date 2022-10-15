@@ -2,7 +2,7 @@
 
 let greetSlider = document.querySelector('#greet-slider');
 let random = Math.ceil(Math.random()*4);
-
+// Рандомная картинка на главном экране
 switch (random){
     case 1:{
         greetSlider.classList.add('first-pic');
@@ -21,3 +21,8 @@ switch (random){
         break;
     }
 }
+
+const burger = document.querySelector('#burger');
+const navMenu = document.querySelector('.nav-menu'); 
+burger.addEventListener('click', ()=> navMenu.classList.toggle('nav-menu_active'))
+
