@@ -694,6 +694,30 @@ footer{
 .footer-second_item:hover{
     opacity: 0.6;
 }
+.bottom-slider-container{
+    height: 450px;
+    margin-top: 40px;
+}
+.slider-title{
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    font-size: 36px;
+    font-family: 'Aire Exterior', serif;
+    line-height: 150%;
+}
+.slide{
+    position: absolute;
+    width: 550px;
+    transition: all 0.7s ease;
+}
+.slide img{
+    border-radius: 20px;
+    height: 350px;
+}
+.slides{
+    position: relative;
+}
 @media (max-width : 1330px){
     .slider{
         width: 1024px;
