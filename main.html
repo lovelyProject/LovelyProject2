@@ -45,10 +45,10 @@
         <div class="nav-list-container">
           <ul class="nav-list">
             <a class="nav-list-item" href="main.html">Главная</a>
-            <a class="nav-list-item" href="#servers">Сервера</a>
+            <a class="nav-list-item" href="#servers" data-="1">Сервера</a>
             <a class="nav-list-item" href="#">Скачать</a>
             <a class="nav-list-item" href="#">Открыть в браузере</a>
-            <a class="nav-list-item" href="#price">Цены</a>
+            <a class="nav-list-item" href="#price" data-="1">Цены</a>
             <a class="nav-list-item" href="#">Тех поддержка</a>
             <a class="nav-list-item" href="#">Контакты</a>
           </ul>
@@ -68,7 +68,8 @@
               <img src="img/ImageServerHost.png" alt="host" />
             </div>
             <div class="first-section-block">
-              <span class="first-section-subtitle"> Облачный гейминг </span>
+                <span class="first-section-subtitle">Облачный гейминг </span>
+              
               <h2 class="first-section-title">Как это работает</h2>
               <p class="first-section-text">
                 Наши сервера запускают игру, и передают вам картинку, которой вы
@@ -84,7 +85,10 @@
             </div>
           </section>
           <section class="second-section">
-            <span class="second-section-subtitle">Быстрый старт</span>
+            <div class="test">
+              <span class="second-section-subtitle">Быстрый старт</span>
+            </div>
+            
             <h2 class="second-section-title">Начни играть</h2>
             <div class="second-section-steps">
               <div class="step-item step-item-line">
@@ -168,7 +172,7 @@
                     />
                   </defs>
                 </svg>
-                <span class="step-description" id="price">Выберите тариф</span>
+                <span class="step-description">Выберите тариф</span>
               </div>
               <!-- <span class="step-item__arrow">&rarr;</span> -->
               <div class="step-item">
@@ -204,13 +208,14 @@
                 <span class="step-description">Начните играть</span>
               </div>
             </div>
-            <a class="start-btn" href="#">Начать</a>
+            <div class="btn-container"><a class="start-btn" href="#">Начать</a></div>
+            
           </section>
           <section class="third-section">
             <div class="third-section-subtitile">
               <span class="third-section-span">Гибкие тарифы</span>
             </div>
-            <h2 class="third-section-title">Доступные подписки</h2>
+            <h2 class="third-section-title" id="price">Доступные подписки</h2>
             <div class="slider-options">
               <div class="slider-container">
                 <div class="option first-option">
@@ -250,7 +255,7 @@
               </div>
             </div>
           </section>
-          <hr class="third-hr-line">
+          <hr class="third-hr-line" >
         </div>
         <section class="fourth-section">
             <div class="fourth-article">
@@ -265,12 +270,28 @@
             </div>
         </section>
         <section class="fifth-section">
-          <span class="fifth-subtitle" id="servers">Игровые сервера на карте</span>
+          <div class="fifth-sub">
+            <span class="fifth-subtitle" id="servers">Игровые сервера на карте</span>
+          </div>
+          
           <h3 class="fifth-title">Карта локаций</h3>
           <div class="fifth-img">
             <img src="img/Moscow.png" alt="">
           </div>
         </section>
+        <div class="slider">
+          <div class="slider-container">
+            <div class="slides">
+              <div class="slide"> <img src="main-bg" alt=""></div>
+              <div class="slide"></div>
+              <div class="slide"></div>
+              <div class="slide"></div>
+              <div class="slide"></div>
+            </div>
+          </div>
+          <span class="prev"></span>
+          <span class="next"></span>
+        </div>
       </div>
     </main>
     <footer>
@@ -296,4 +317,5 @@
       </div>
     </footer>
   </body>
+  <script src="script.js"></script>
 </html>
